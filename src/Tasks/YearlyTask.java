@@ -12,6 +12,7 @@ public class YearlyTask extends Task {
             , String description) {
         super(title, type, dataTime, description);
     }
+
     @Override
     public boolean appearsln(LocalDate dateForCheck) {
         return getDataTime().getMonth() == dateForCheck.getMonth()

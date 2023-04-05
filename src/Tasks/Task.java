@@ -66,6 +66,7 @@ public abstract class Task {
             this.description = "Описание задачи небыло заданно. Измените описание через меню!";
         }
     }
+
     public void checkSetDescription(String description) throws IncorrectArgumentException {
         if (description == null || description.isEmpty() || description.isBlank()) {
             throw new IncorrectArgumentException(description);
